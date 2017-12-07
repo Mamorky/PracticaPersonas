@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PracticaExamen</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_delete">Borrar</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="edt_personaNombre">Nombre de Persona</string>
+    <string name="edt_personaApellido">Apellido de Persona</string>
+    <string name="action_ordenarPorNombre">Ordenar por Nombre</string>
+    <string name="action_ordenarPorId">Ordenar por Id</string>
+    <string name="action_ordenarPorApellido">Ordenar Por Apellido</string>
+</resources>

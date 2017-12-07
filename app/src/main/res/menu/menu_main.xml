@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mamorky.practicaexamen.persona.ListPersonaActivityImp">
+    <item
+        android:id="@+id/action_ordenarPorNombre"
+        android:orderInCategory="100"
+        android:title="@string/action_ordenarPorNombre"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_ordenarPorApellido"
+        android:orderInCategory="100"
+        android:title="@string/action_ordenarPorApellido"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_ordenarPorId"
+        android:orderInCategory="100"
+        android:title="@string/action_ordenarPorId"
+        app:showAsAction="never" />
+</menu>
