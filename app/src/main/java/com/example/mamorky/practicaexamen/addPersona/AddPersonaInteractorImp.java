@@ -1,6 +1,6 @@
 package com.example.mamorky.practicaexamen.addPersona;
 
-import com.example.mamorky.practicaexamen.Pojo.Persona;
+import com.example.mamorky.practicaexamen.pojo.Persona;
 import com.example.mamorky.practicaexamen.Respository.PersonasRepository;
 
 /**
@@ -30,5 +30,17 @@ public class AddPersonaInteractorImp implements AddPersonaInteractor{
             PersonasRepository.getInstance().addPersona(personaTmp);
             onValidateFinish.onSuccess();
         }
+    }
+
+    @Override
+    public boolean editPersona(String apellido, String nombre,onValidateFinish onValidateFinish) {
+        if(nombre.isEmpty())
+            onValidateFinish.onNombreError();
+        else{
+            PersonasRepository.getInstance().editPersona(apellido,nombre);
+            onValidateFinish.onSuccess();
+            return true;
+        }
+        return false;
     }
 }

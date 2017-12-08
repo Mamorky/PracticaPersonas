@@ -9,12 +9,10 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.example.mamorky.practicaexamen.Pojo.Persona;
+import com.example.mamorky.practicaexamen.pojo.Persona;
 import com.example.mamorky.practicaexamen.R;
-import com.example.mamorky.practicaexamen.Respository.PersonasRepository;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by mamorky on 7/12/17.

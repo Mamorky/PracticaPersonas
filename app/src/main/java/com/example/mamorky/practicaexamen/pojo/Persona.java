@@ -1,16 +1,13 @@
-package com.example.mamorky.practicaexamen.Pojo;
+package com.example.mamorky.practicaexamen.pojo;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.NonNull;
-
-import java.util.Comparator;
 
 /**
  * Created by mamorky on 7/12/17.
  */
 
-public class Persona implements Parcelable,Comparable<Persona>{
+public class Persona implements Parcelable{
 
     //1.- Crear Campos
 
@@ -73,6 +70,11 @@ public class Persona implements Parcelable,Comparable<Persona>{
     }
 
     @Override
+    public String toString() {
+        return super.toString();
+    }
+
+    @Override
     public void writeToParcel(Parcel parcel, int flags) {
         parcel.writeInt(id);
         parcel.writeString(nombre);
@@ -83,10 +85,5 @@ public class Persona implements Parcelable,Comparable<Persona>{
         id = in.readInt();
         nombre = in.readString();
         apellido = in.readString();
-    }
-
-    @Override
-    public int compareTo(@NonNull Persona o) {
-        return this.getNombre().compareTo(o.getNombre());
     }
 }

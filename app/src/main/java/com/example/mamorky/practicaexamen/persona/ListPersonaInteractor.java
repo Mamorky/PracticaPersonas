@@ -1,6 +1,6 @@
 package com.example.mamorky.practicaexamen.persona;
 
-import com.example.mamorky.practicaexamen.Pojo.Persona;
+import com.example.mamorky.practicaexamen.pojo.Persona;
 
 import java.util.ArrayList;
 

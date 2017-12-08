@@ -1,6 +1,6 @@
 package com.example.mamorky.practicaexamen.Respository;
 
-import com.example.mamorky.practicaexamen.Pojo.Persona;
+import com.example.mamorky.practicaexamen.pojo.Persona;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -62,6 +62,16 @@ public class PersonasRepository {
         return personas.remove(persona);
     }
 
+    public boolean editPersona(String apellido,String nombre){
+        for (int i = 0; i < personas.size(); i++) {
+            if(personas.get(i).getApellido().equals(apellido)){
+                personas.get(i).setNombre(nombre);
+                return true;
+            }
+        }
+        return false;
+    }
+
     public int getLastId(){
         int maxId = 0;
         for(Persona tmp:personas){
@@ -81,7 +91,7 @@ public class PersonasRepository {
 
         //Es necesario utilizar Collietion.sort para ordenar
         if(orden == "nombre")
-            Collections.sort(personas);
+            Collections.sort(personas,new CompareByApellido());
         else if(orden == "id"){
             Collections.sort(personas,new CompareById());
         }

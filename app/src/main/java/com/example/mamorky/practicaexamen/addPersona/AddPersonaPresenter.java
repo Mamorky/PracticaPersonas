@@ -6,4 +6,5 @@ package com.example.mamorky.practicaexamen.addPersona;
 
 public interface AddPersonaPresenter {
     void validatePersona(String nombre, String apellido);
+    boolean editPersona(String apellido,String nombre);
 }

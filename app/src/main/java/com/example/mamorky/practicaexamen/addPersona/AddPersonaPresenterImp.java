@@ -18,6 +18,11 @@ public class AddPersonaPresenterImp implements AddPersonaPresenter,AddPersonaInt
         interactor.validatePersona(nombre,apellido,this);
     }
 
+    @Override
+    public boolean editPersona(String apellido, String nombre) {
+        return interactor.editPersona(apellido,nombre,this);
+    }
+
 
     @Override
     public void onNombreError() {

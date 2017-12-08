@@ -1,16 +1,12 @@
 package com.example.mamorky.practicaexamen.persona;
 
 import android.app.Dialog;
-import android.app.VoiceInteractor;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.ContextMenu;
-import android.view.MenuInflater;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,11 +14,10 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.mamorky.practicaexamen.Adapter.PersonaAdapter;
-import com.example.mamorky.practicaexamen.Pojo.Persona;
+import com.example.mamorky.practicaexamen.pojo.Persona;
 import com.example.mamorky.practicaexamen.R;
-import com.example.mamorky.practicaexamen.Respository.PersonasRepository;
-import com.example.mamorky.practicaexamen.addPersona.AddPersonaView;
 import com.example.mamorky.practicaexamen.addPersona.AddPersonaViewImp;
+import com.example.mamorky.practicaexamen.utils.AddEdit;
 import com.example.mamorky.practicaexamen.utils.CommonDialog;
 
 import java.util.ArrayList;
@@ -60,6 +55,22 @@ public class ListPersonaActivityImp extends AppCompatActivity implements ListPer
         showPersonas();
 
 
+
+
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long id) {
+                Bundle bundle = new Bundle();
+                bundle.putInt("modo",AddEdit.EDIT_MODE);
+                bundle.putParcelable("persona",(Persona)adapterView.getItemAtPosition(i));
+                Intent intent = new Intent(getApplication(),AddPersonaViewImp.class);
+                intent.putExtras(bundle);
+                startActivity(intent);
+                finish();
+            }
+        });
+
         // Esto es necesario para que se muestre el menú contextual
         registerForContextMenu(listView);
     }
@@ -74,7 +85,7 @@ public class ListPersonaActivityImp extends AppCompatActivity implements ListPer
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.action_ordenarPorNombre:
-                showPersonas("nombre");
+                showPersonas();
                 break;
             case R.id.action_ordenarPorApellido:
                 showPersonas("apellido");
