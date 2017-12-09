@@ -1,4 +1,4 @@
-package com.example.mamorky.practicaexamen.pojo;
+package com.example.mamorky.practicaexamen.data.pojo;
 
 import android.os.Parcel;
 import android.os.Parcelable;

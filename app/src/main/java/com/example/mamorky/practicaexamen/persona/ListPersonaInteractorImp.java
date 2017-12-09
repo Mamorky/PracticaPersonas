@@ -1,7 +1,7 @@
 package com.example.mamorky.practicaexamen.persona;
 
-import com.example.mamorky.practicaexamen.pojo.Persona;
-import com.example.mamorky.practicaexamen.Respository.PersonasRepository;
+import com.example.mamorky.practicaexamen.data.pojo.Persona;
+import com.example.mamorky.practicaexamen.data.Respository.PersonasRepository;
 
 import java.util.ArrayList;
 

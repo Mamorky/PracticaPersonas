@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-import com.example.mamorky.practicaexamen.pojo.Persona;
+import com.example.mamorky.practicaexamen.data.pojo.Persona;
 import com.example.mamorky.practicaexamen.R;
 import com.example.mamorky.practicaexamen.persona.ListPersonaActivityImp;
 import com.example.mamorky.practicaexamen.utils.AddEdit;

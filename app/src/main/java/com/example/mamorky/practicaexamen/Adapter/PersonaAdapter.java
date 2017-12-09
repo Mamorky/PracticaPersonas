@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.example.mamorky.practicaexamen.pojo.Persona;
+import com.example.mamorky.practicaexamen.data.pojo.Persona;
 import com.example.mamorky.practicaexamen.R;
 
 import java.util.ArrayList;

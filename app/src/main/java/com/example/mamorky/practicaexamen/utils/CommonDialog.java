@@ -7,7 +7,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.example.mamorky.practicaexamen.pojo.Persona;
+import com.example.mamorky.practicaexamen.data.pojo.Persona;
 import com.example.mamorky.practicaexamen.R;
 import com.example.mamorky.practicaexamen.persona.ListPersonaPresenter;
 

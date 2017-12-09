@@ -1,7 +1,7 @@
 package com.example.mamorky.practicaexamen.addPersona;
 
-import com.example.mamorky.practicaexamen.pojo.Persona;
-import com.example.mamorky.practicaexamen.Respository.PersonasRepository;
+import com.example.mamorky.practicaexamen.data.pojo.Persona;
+import com.example.mamorky.practicaexamen.data.Respository.PersonasRepository;
 
 /**
  * Created by mamorky on 7/12/17.

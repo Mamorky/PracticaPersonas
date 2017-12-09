@@ -14,9 +14,10 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.mamorky.practicaexamen.Adapter.PersonaAdapter;
-import com.example.mamorky.practicaexamen.pojo.Persona;
+import com.example.mamorky.practicaexamen.data.pojo.Persona;
 import com.example.mamorky.practicaexamen.R;
 import com.example.mamorky.practicaexamen.addPersona.AddPersonaViewImp;
+import com.example.mamorky.practicaexamen.pref.GeneralPreferencesActivity;
 import com.example.mamorky.practicaexamen.utils.AddEdit;
 import com.example.mamorky.practicaexamen.utils.CommonDialog;
 
@@ -92,6 +93,9 @@ public class ListPersonaActivityImp extends AppCompatActivity implements ListPer
                 break;
             case R.id.action_ordenarPorId:
                 showPersonas("id");
+                break;
+            case R.id.pref_generales:
+                startActivity(new Intent(getApplication(), GeneralPreferencesActivity.class));
                 break;
             default:
                 showPersonas();

@@ -19,4 +19,9 @@
         android:orderInCategory="100"
         android:title="@string/action_ordenarPorId"
         app:showAsAction="never" />
+
+    <item
+        android:title="Ajustes Generales"
+        android:id="@+id/pref_generales"
+        app:showAsAction="never"/>
 </menu>

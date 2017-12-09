@@ -19,7 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".addPersona.AddPersonaViewImp"></activity>
+        <activity android:name=".addPersona.AddPersonaViewImp" />
+        <activity
+            android:name=".pref.GeneralPreferencesActivity"
+            android:label="@string/title_activity_ajustes"></activity>
     </application>
 
 </manifest>
